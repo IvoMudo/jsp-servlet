@@ -28,11 +28,11 @@
         
         <div class="input-group mb-3">
           <input type="text" class="form-control" name="addressCEP" placeholder="Insira o CEP" id="cep-number" maxlength="9">
-          <button class="btn btn-primary" type="button" id="button-addon2" onclick="callConsultaCep()">Procurar Cep</button>
+          <button class="btn btn-primary" type="button" id="button-addon2" onclick="getFromCepAPI()">Procurar Cep</button>
         </div>
         
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Cidade" name="cidade" id="city" value="<%= request.getAttribute("cidade") %>">
+          <input type="text" class="form-control" placeholder="Cidade" name="cidade" id="city">
           <select class="form-select form-select-sm" name="estado" id="state">
             <option selected>UF</option>
             <option value="RO">RO</option>
@@ -73,5 +73,5 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
 </script>
 <script src="js/inputMask.js"></script>
-<script src="js/callConsultaCep.js"></script>
+<script src="js/getFromCepAPI.js"></script>
 </body>
