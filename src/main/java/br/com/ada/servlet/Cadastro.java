@@ -16,9 +16,11 @@ public class Cadastro extends HttpServlet {
         String name = req.getParameter("name");
         String document = req.getParameter("document");
         String celNumber = req.getParameter("cel-number");
-        String address = req.getParameter("address");
+        String addressCEP = req.getParameter("addressCEP");
+        String estado = req.getParameter("estado");
+        String cidade = req.getParameter("cidade");
 
-        if(name.equals("") || document.equals("") || celNumber.equals("") || address.equals("")){
+        if(name.equals("") || document.equals("") || celNumber.equals("") || addressCEP.equals("")|| estado.equals("")|| cidade.equals("")){
             resp.setContentType("text/html");
             resp.getWriter().println("<h3>Dados obrigatórios não preenchidos!</h3>");
             resp.getWriter().println("<a href='index.jsp'>Tentar novamente</a>");
@@ -27,7 +29,9 @@ public class Cadastro extends HttpServlet {
             req.setAttribute("name",name);
             req.setAttribute("document",document);
             req.setAttribute("cel-number",celNumber);
-            req.setAttribute("address",address);
+            req.setAttribute("addressCEP",addressCEP);
+            req.setAttribute("estado",estado);
+            req.setAttribute("cidade",cidade);
 
             RequestDispatcher requestDispatcher = req.getRequestDispatcher("data.jsp");
 

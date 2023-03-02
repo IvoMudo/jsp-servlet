@@ -22,22 +22,36 @@
       <div class="mb-3 row">
         <label for="staticCpf" class="col-md-2 col-form-label">CPF</label>
         <div class="col-md-10">
-          <input type="text" readonly class="form-control-plaintext" id="staticIdade" value="<%= request.getAttribute("document") %>">
+          <input type="text" readonly class="form-control-plaintext" id="staticCpf" value="<%= request.getAttribute("document") %>">
         </div>
       </div>
 
       <div class="mb-3 row">
         <label for="staticTelefone" class="col-md-2 col-form-label">Telefone</label>
         <div class="col-md-10">
-          <input type="text" readonly class="form-control-plaintext" id="staticIdade" value="<%= request.getAttribute("cel-number") %>">
+          <input type="text" readonly class="form-control-plaintext" id="staticTelefone" value="<%= request.getAttribute("cel-number") %>">
         </div>
       </div>
 
       <div class="mb-3 row">
-        <label for="staticAddress" class="col-md-2 col-form-label">Endereço</label>
+        <label for="staticAddress" class="col-md-2 col-form-label">CEP</label>
         <div class="col-md-10">
-          <input type="text" readonly class="form-control-plaintext" id="staticAddress"
-            value="<%= request.getAttribute("address") %>">
+          <input type="text" readonly class="form-control-plaintext" id="staticAddressCep"
+            value="<%= request.getAttribute("addressCEP") %>">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="staticAddress" class="col-md-2 col-form-label">UF</label>
+        <div class="col-md-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticEstado"
+            value="<%= request.getAttribute("estado") %>">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="staticAddress" class="col-md-2 col-form-label">Cidade</label>
+        <div class="col-md-10">
+          <input type="text" readonly class="form-control-plaintext" id="staticCidade"
+            value="<%= request.getAttribute("cidade") %>">
         </div>
       </div>
 
